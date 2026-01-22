@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Psyche Calibration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="iphone-frame">
+    <canvas id="starfield"></canvas>
+
+    <div id="page-welcome" class="page active">
+        <div class="welcome-text">What to drink tonight?</div>
+    </div>
+
+    <div id="page-filter" class="page">
+        <div class="btn-home" onclick="goHome()"><svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg></div>
+        <div class="header-title">PSYCHE CALIBRATION</div>
+        <div class="pickers-area" id="pickers"></div>
+        <div class="btn-container">
+            <button id="btn-submit" class="btn-submit">WAITING FOR YOU...</button>
+        </div>
+    </div>
+
+    <div id="page-result" class="page">
+        <div class="btn-home" onclick="goHome()"><svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg></div>
+        <div class="stack-container" id="stack"></div>
+    </div>
+
+    <div id="page-diary" class="page">
+        <div class="btn-home" onclick="goHome()"><svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg></div>
+        <div class="cal-title">JANUARY 2026</div>
+        <div id="calendar" class="calendar"></div>
+        <div id="mini-card-box" class="mini-card-container"></div>
+        <p style="margin-top:auto; margin-bottom:30px; color:#444; font-size:0.7rem; letter-spacing: 1px;">LOG ENTRY SAVED</p>
+    </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
